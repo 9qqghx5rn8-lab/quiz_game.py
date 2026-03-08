@@ -1,0 +1,44 @@
+#Quiz game
+# ask for user's name and welcoming
+name = input("Enter your name : ")
+print("Welcome to our Quiz Game", name)
+while True:
+    response = input("Are you ready to strart? Yes/No : ")
+    if response == "Yes":
+        print("Great, let's beggin!")
+        break
+    elif response == "No":
+        print("Se you next time!")
+        break
+    else:
+        print("Tape 'Yes' or 'No' (with capital Y and N : ")
+# ask questions
+print("We'll see if you are smart. ", sep="")
+print("Answer to the following questions. But think deeply before answering!")
+print ()
+question1 = "What's the smal'est country in the world?"
+correct_answer1 = "Vatican"
+question2 = "What's the capital of Germany ?"
+correct_answer2 = "Berlin"
+question3 = "What's the hardest natural substance on Earth?"
+correct_answer3 = "Diamond"
+question4 = "If a man walks 3km North, 4km East, then 3km South. How far is he from the starting point ?"
+correct_answer4 = "4km"
+question5 = "If A is the mother of B and B the father of C. How is A related to C ?"
+correct_answer5 = "Grandmother"
+def ask_question (question, correct_answer) :
+    for response in range (1,4):
+        print (question)
+        response = input ("Answer : ")
+        if response == correct_answer:
+            print("Correct!")
+            break
+        else:
+            print("Incorect!")
+    else:
+        print ("Did you even go to school")
+ask_question (question1, correct_answer1)
+ask_question(question2, correct_answer2)
+ask_question(question3, correct_answer3)
+ask_question(question4, correct_answer4)
+ask_question( question5, correct_answer5)
