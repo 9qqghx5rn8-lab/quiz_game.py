@@ -4,8 +4,7 @@ Small quiz game written in Python.
 
 ## Features
 - Asks questions
-- Checks answers
-- Keeps score
+- Checks answer
 
 ## How to run
 
